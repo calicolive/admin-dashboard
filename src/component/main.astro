@@ -1,5 +1,6 @@
 ---
 import Dashboard from "./dashboard.astro";
+import AdminPanel from "./admin-panel.astro";
 ---
 
 <div class="container max-w-full mx-auto min-h-screen">
@@ -11,8 +12,9 @@ import Dashboard from "./dashboard.astro";
       <Dashboard />
     </div>
 
-    <div class="bg-slate-200 min-h-screen w-full p-6">
+    <div class="bg-slate-200 min-h-screen w-full flex flex-col">
       <!-- Admin Panel -->
+      <AdminPanel />
     </div>
   </div>
 </div>
