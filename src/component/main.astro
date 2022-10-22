@@ -3,18 +3,14 @@ import Dashboard from "./dashboard.astro";
 import AdminPanel from "./admin-panel.astro";
 ---
 
-<div class="container max-w-full mx-auto min-h-screen">
-  <div class="flex items-center justify-between">
-    <div
-      class="bg-blue-500 min-h-screen w-1/4 flex flex-col items-center text-white text-center"
-    >
-      <!-- Dashboard -->
-      <Dashboard />
-    </div>
+<div class="flex h-100 overflow-hidden">
+  <div class="bg-blue-500 w-1/4 text-white text-center">
+    <!-- Dashboard -->
+    <Dashboard />
+  </div>
 
-    <div class="bg-slate-200 min-h-screen w-full flex flex-col">
-      <!-- Admin Panel -->
-      <AdminPanel />
-    </div>
+  <div class="bg-slate-200 min-h-screen w-full">
+    <!-- Admin Panel -->
+    <AdminPanel />
   </div>
 </div>
